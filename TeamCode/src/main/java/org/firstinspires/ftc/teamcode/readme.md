@@ -30,7 +30,7 @@ The prefix of the name will be one of the following:
             required to read and display the sensor values.
 * Hardware: This is not an actual OpMode, but a helper class that is used to describe
             one particular robot's hardware devices: eg: for a Pushbot.  Look at any
-            Pushbot sample to see how this can be used in an OpMode.
+            Phoebe sample to see how this can be used in an OpMode.
             Teams can copy one of these to create their own robot definition.
 * Pushbot:  This is a Sample OpMode that uses the Pushbot robot structure as a base.
 * Concept:	This is a sample OpMode that illustrates performing a specific function or concept.

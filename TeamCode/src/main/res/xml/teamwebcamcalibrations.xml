@@ -2,7 +2,7 @@
 <!-- 
   This file can provide additional camera calibration settings beyond those built into the SDK itself.
   Each calibration is for a particular camera (indicated by USB vid & pid pair) and a particular
-  capture resolution for the camera. Note: it is very important when capturing images used to calibrate
+  capture resolution for the camera. Note: it is very important when capturing images used to calibrateWithKnownLocation
   a camera that the image acquisition tool can actually control this capture resolution within the camera
   itself and that you use this setting correctly. Many image acquistion tools do not in fact provide
   this level of control.
@@ -22,7 +22,7 @@
   is offered the entire range of capture resolutions that the hardware can support (and it does its
   best to deal with the lack of calibration). However, if *any* calibrations are provided for a camera,
   then capture resolutions in those aspect ratios supported by the camera for which any calibrations
-  are *not* provided are *not* offered. Thus, if you calibrate a camera but fail to calibrate all
+  are *not* provided are *not* offered. Thus, if you calibrateWithKnownLocation a camera but fail to calibrateWithKnownLocation all
   the camera's supported aspect ratios, you limit the choices of capture resolutions that Vuforia can
   select from.
 
@@ -32,7 +32,7 @@
   Programs that can process acquired images to determine camera calibration settings include:
     https://www.3dflow.net/3df-zephyr-free/ (see "Utilities/Images/Launch Camera Calibration" therein)
     http://graphics.cs.msu.ru/en/node/909
-  Note that the type of images that must be acquired in order to calibrate is specific to the
+  Note that the type of images that must be acquired in order to calibrateWithKnownLocation is specific to the
   calibration software used.
 
   The required contents are illustrated here by example. Note that for the attribute names, both the
